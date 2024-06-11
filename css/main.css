@@ -1,0 +1,84 @@
+/* Section */
+section {
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  margin: 0 5% 2rem 5%;
+  padding: 4rem 0 4rem 4rem;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: 80%;
+
+  & h2 {
+    font-size: var(--font-size-large);
+    color: var(--color-blue);
+  }
+
+  & h3 {
+    font-size: var(--font-size-medium);
+
+    &:nth-child(3) {
+      color: var(--color-gray);
+    }
+  }
+}
+
+/* Card List */
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 5%;
+  padding: 2rem 0;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 2rem;
+
+  & img {
+    width: 6rem;
+  }
+
+  & p {
+    color: var(--color-gray);
+  }
+
+  & a {
+    color: var(--color-blue);
+  }
+}
+
+/* Responsive */
+@media (width < 768px) {
+    .container {
+        & h2 {
+            font-size: var(--font-size-small);
+        }
+
+        & h3 {
+            font-size: var(--font-size-extra-small);
+        }
+    }
+
+  .card-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7.5%;
+}
+
+/* Logo */
+.logo {
+    & span {
+        color: var(--color-white);
+        background-color: var(--color-black);
+    }
+}
+
+/* Navigation */
+nav {
+    & ul {
+        display: flex;
+        gap: 4rem;
+
+        & a {
+            color: var(--color-black);
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--color-blue);
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media (width < 768px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (width < 536px) {
+    nav {
+        display: none;
+    }
+}

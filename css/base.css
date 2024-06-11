@@ -1,0 +1,44 @@
+:root {
+    /* Colours */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #777777;
+    --color-blue: #0676c0;
+
+    /* Font Size */
+    --font-size-large: 8rem;
+    --font-size-medium: 3.2rem;
+    --font-size-small: 3.8rem;
+    --font-size-extra-small: 2rem;
+
+    /* Transition */
+    --transition: .6s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul {
+    list-style: none;
+}
